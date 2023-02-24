@@ -1,0 +1,232 @@
+:root{
+    --primary_color:#2874f0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f0f0;
+}
+li{
+    list-style: none;
+}
+/* ------------------navbar---------------------------------- */
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: var(--primary_color);
+    padding: 10px;
+    display:flex ;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+}
+.logo-wrapper{
+   
+    height: 50%;
+    width: 80px;
+    margin-bottom: -6px;
+}
+.logo-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+.logo-tagline a{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    letter-spacing: -0.9px;
+    font-size: 0.85rem;
+}
+.logo-tagline a:hover{
+    border-bottom:1px solid white;
+}
+.logo-tagline a span{
+    color: #ffe500;
+}
+.logo-tagline img{
+    width: 13%;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+.nav-item{
+    margin-right: 10px;
+}
+.searchbox{
+    display: flex  ;
+    flex: 3;
+}
+.searchbox input{
+    padding: 10px 15px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    width: 70%;
+    box-shadow: 2px 3px 5px -1px rgba(0,0,0,.5);
+}
+/* .search-link{
+    
+} */
+.searchbox span{
+    color: var(--primary_color);
+    background-color: white;
+    padding: 10px;
+    border: none;
+    /* box-shadow: 2px 3px 5px -1px rgba(0,0,0,.5); */
+}
+.login-btn{
+    background-color: white;
+    color: var(--primary_color);
+    width:125px;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    border:1px solid #dbdbdb
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+
+/* ------------------categories---------------------------------- */
+.category-items{
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    justify-content: space-between;
+    overflow: auto;
+}
+.categories-container{
+    background-color: white;
+    max-width: 100%;
+    padding-top: 60px;
+}
+.category-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.category-item img{
+  
+    width: 50%;
+    object-fit: contain;
+}
+.category-item p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    
+}
+
+.category-item:hover{
+    cursor: pointer;
+    color: var(--primary_color);
+
+}
+
+
+/* ------------------Products---------------------------------- */
+.products-container{
+    /* border: 1px dotted black; */
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+}
+.left-section{
+    /* border: 1px dotted red; */
+    display: flex;
+    flex-direction: column;
+
+    flex: 6;
+}
+.top-section{
+    display: flex;
+    /* border: 1px dotted yellow; */
+    position: relative;
+    padding: 16px;
+    background-color: white;
+    margin-bottom: 5px;
+    
+}
+
+.top-section h2{
+    margin-right: 10px;
+}
+.top-section p{
+    display: flex;
+    align-items: center;
+}
+.top-section div h4{
+    color:grey;
+    font-size: 0.9rem;
+}
+
+.products-section{
+    overflow-x: hidden;
+    display: flex;
+    /* border: 1px dotted cyan; */
+    background-color: white;
+    padding: 30px;
+}
+.product-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-item img{
+    width: 70%;
+}
+.product-item > *{
+    margin-bottom: 10px;
+}
+.product-item :nth-child(3) {
+    color: #388e3c;
+}
+.product-item :nth-child(4) {
+    color:grey;
+}
+.ad-section{
+    flex: 1;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.view-btn{
+    background-color:var(--primary_color);
+    color: white;
+    border: none;
+    width:100px;
+    padding: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.products-section-2{
+    flex-direction: column;
+}
+
