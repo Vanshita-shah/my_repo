@@ -1,6 +1,7 @@
 .mainContainer {
   display: flex;
-  height: 90vh;
+  /* height: 90vh; */
+  min-height: calc(100vh - 60px);
   justify-content: center;
   align-items: center;
 }
@@ -9,6 +10,7 @@
   display: flex;
   padding: 20px;
   border: 1px solid #fff4ff;
+  position: relative;
   box-shadow: 0px 1px 6px 0 rgb(0 0 0 / 30%);
   width: 60%;
 }

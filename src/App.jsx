@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./components/Home/Home";
 import ProtectedRoutes from "./components/ProtectedRoutes";
 import Authentication from "./components/Authentication/Authentication";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 const App = () => {
   return (
@@ -16,6 +17,9 @@ const App = () => {
         path="/home"
         element={<ProtectedRoutes Component={Home} />}
       ></Route>
+
+      {/* Common route for error page */}
+      <Route path="*" element={<ErrorPage />} />
     </Routes>
   );
 };

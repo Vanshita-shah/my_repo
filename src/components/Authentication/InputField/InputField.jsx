@@ -1,6 +1,6 @@
 import React from "react";
 import { ErrorMessage, Field } from "formik";
-import ErrorMsg from "../../ErrorMsg/ErrorMsg";
+import ErrorMsg from "../FormUtils/FieldError/ErrorMsg";
 import Styles from "../Authentication.module.css";
 
 // Reusable Component For all the Form Field

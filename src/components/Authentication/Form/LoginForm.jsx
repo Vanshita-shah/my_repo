@@ -5,7 +5,7 @@ import InputField from "../InputField/InputField";
 import Styles from "../Authentication.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { authActions } from "../../../store/authSlice";
-import FormErrors from "../FormUtils/FormErrors";
+import FormErrors from "../FormUtils/FormError/FormErrors";
 
 const LoginForm = () => {
   const dispatch = useDispatch();

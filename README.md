@@ -29,12 +29,13 @@
 
 - Header : contains navigation bar
 - Authentication : Contains Signup and login form, also form-utils for validation and form-level errors
-  - LoginForm
-  - SignupForm
-  - FormErrors
+  - Form/LoginForm
+  - Form/SignupForm
+  - FormError/FormErrors
+  - FieldError/ErrorMsg
   - InputField : Reusable component for Fields
 - Home : Contains homepage JSX
-- ErrorMsg : For Field-level errors
+- ErrorPage : Handles page not found Error
 
 ### Folder Structure :
 

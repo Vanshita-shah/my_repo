@@ -8,6 +8,8 @@
   background-color: rgb(231, 183, 250);
   padding: 10px;
   color: #004886;
+  /* margin-bottom: 10px; */
+  z-index: 1000;
 }
 
 .navlink {

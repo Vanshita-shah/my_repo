@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import previewImg from "../../../assets/preview.png";
-import ErrorMsg from "../../ErrorMsg/ErrorMsg";
+import ErrorMsg from "../FormUtils/FieldError/ErrorMsg";
 import {
   signupValues,
   signupValidateSchema,
@@ -10,7 +10,7 @@ import InputField from "../InputField/InputField";
 import Styles from "../Authentication.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { authActions } from "../../../store/authSlice";
-import FormErrors from "../FormUtils/FormErrors";
+import FormErrors from "../FormUtils/FormError/FormErrors";
 
 const SignupForm = () => {
   const [preview, setPreview] = useState(previewImg);
